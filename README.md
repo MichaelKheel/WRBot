@@ -1,4 +1,4 @@
-# WRBot ![GitHub build](https://img.shields.io/badge/build-compiled-brightgreen.svg) [![GitHub release](https://img.shields.io/github/release/michaelkheel/WorldRecordBot.svg)](https://github.com/MichaelKheel/WorldRecordBot/releases)
+# WRBot ![GitHub build](https://img.shields.io/badge/build-compiled-brightgreen.svg) [![GitHub release](https://img.shields.io/github/release/michaelkheel/WRBot.svg)](https://github.com/MichaelKheel/WRBot/releases)
 
 The plugin is designed to display a world record on a local server or global. It has many settings, easy installation and two ways to get the data, depending on your preference.
 
