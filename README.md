@@ -4,6 +4,10 @@
   <img src="https://github.com/MichaelKheel/WRBot/blob/master/screenshots/logo-bot.png?raw=true" alt="WRBot Logo" width="300px;" />
 </p>
 
+### 📢 Issue tracker for WRBot
+You have noticed a bug in the plugin, please create an issue and describe as detailed as possible what the bug is.
+
+### Discription
 The plugin is designed to display a world record on a local server or global. It has many settings, easy installation and two ways to get the data, depending on your preference.
 
 **nVault** method of retrieve data from a demo file from servers XJ / CC directly.
