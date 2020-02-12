@@ -4,6 +4,9 @@
   <img src="https://github.com/MichaelKheel/WRBot/blob/master/screenshots/logo-bot.png?raw=true" alt="WRBot Logo" width="300px;" />
 </p>
 
+### ⚠ The plugin is stopped.
+The plugin is no longer supported, license sales are stopped. The source code is uploaded.
+
 ### 📢 Issue tracker for WRBot
 You have noticed a bug in the plugin, please create an issue and describe as detailed as possible what the bug is.
 
