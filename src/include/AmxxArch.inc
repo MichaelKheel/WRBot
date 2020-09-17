@@ -20,8 +20,8 @@
 	#endinput
 #endif
 #define _AmxxArch_included
- 
- 
+
+
 #if AMXX_VERSION_NUM >= 175
 	#pragma reqlib AmxxArch
 	#if !defined AMXMODX_NOAUTOLOAD
@@ -32,7 +32,7 @@
 #endif
 
 
-native AA_Unarchive( const filename[], const destfile[] );
+native AA_Unarchive( const filename[] );
 
 
 
