@@ -1,1 +1,372 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<title>Kreedz WR BOT</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // плавное перемещение страницы к нужному блоку
+    $("span").click(function () {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top;
+        $("body,html").animate({scrollTop: destination }, 1000);
+    });
+});
+$(function(){
+    $.getJSON('https://api.github.com/repos/MichaelKheel/WRBot/releases/latest', function(data) {
+		$("#githubVersion").html(data.name);
+    });
+});
+</script>
+</head>
+<body>
+
+<video class="header" width="100%" autoplay muted loop>
+    <source src="video/header.mp4">
+</video>
+
+	<div class="header_block">
+    	<figure class="logo animated fadeInDown delay-07s">
+        	<img src="img/logo.png" alt="">
+        </figure>
+        <h1 class="animated fadeInDown delay-07s">Welcome to Kreedz World</h1>
+        <ul class="we-create animated fadeInUp delay-1s">
+            <li>The plugin is designed for servers with the engine goldsrc</li>
+        </ul>
+        <ul class="we-create animated fadeInUp delay-1s">
+        	<li>With all the information you can familiarize below.</li>
+        </ul>
+            <span class="link animated fadeInDown delay-1s" href="#test"><i class="fa fa-chevron-circle-down"></i></span>
+    </div>
+
+<nav class="main-nav-outer" id="test" style="z-index: auto; position: relative; top: auto;"><!--main-nav-start-->
+	<div class="container">
+        <ul class="main-nav">
+        	<li><a href="#header">Home</a></li>
+            <li><a href="#plugin">Plugin Info</a></li>
+            <li><a href="#database">WR Database</a></li>
+            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+            <li><a href="#database">WR Database</a></li>
+            <li><a href="#developers">Developers</a></li>
+            <li><a href="#price">Price</a></li>
+        </ul>
+        <a class="res-nav_click"  href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+
+
+
+<section class="main-section" id="plugin"><!--main-section-start-->
+	<div class="container">
+    	<h2>World Record Bot</h2>
+    	<h2><font style="color:#b13b01;" id="githubVersion"></font></h2>
+        <div class="row">
+        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-hourglass"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>Install plugin</h3>
+                        <p>It is only necessary download the plugin and install it on the lan / public server and register in plugins.ini</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-signal"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>High-speed performance</h3>
+                        <p>The plugin does not a load your lan / public server, loading takes place almost instantaneously.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-eye"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>Show record</h3>
+                        <p>It works on all maps where there is a world record.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-cogs"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>Play bot</h3>
+                        <p>Bot repeats the movement exactly like the demo.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-flag"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>Country flag</h3>
+                        <p>Overhead bot flag of the country which currently has the world record.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-refresh"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>Update WR</h3>
+                        <p>Update occurs automatically after the release sites.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-hand-peace-o"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>2 Version</h3>
+                        <p>We suggest you try the 2 versions of the bot. They differ only by the method of receiving data.</p>
+                    </div>
+                </div>
+            </div>
+            <figure class="col-lg-8 col-sm-6  text-right wow fadeInRight delay-02s">
+            	<img src="img/robot.png" alt="">
+            </figure>
+
+        </div>
+	</div>
+</section><!--main-section-end-->
+
+<!--XJ-->
+
+<section class="main-section alabaster" id="database"><!--main-section alabaster-start-->
+	<div class="container">
+    	<div class="row">
+			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+            	<video width="100%" class="video-border" autoplay muted loop>
+                    <source src="video/xj.mp4">
+                </video>
+            </figure>
+        	<div class="col-lg-7 col-sm-8 featured-work">
+            	<h2 style="color:#fff"><font style="color: #fff">XTREME</font>-<font style="color: #FF8C00">JUMPS</font></h2>
+            	<P class="padding-b">Xtreme-Jumps is a fast growing community for climbing maps in Counter-Strike. Here you can find official worldrecords, maps, tournaments and more.</P>
+            	<div class="featured-box">
+                	<div class="featured-box-col1 wow fadeInRight delay-02s">
+                    	<i class="fa-database" style="line-height: 45px;"></i>
+                    </div>
+                	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                        <span class="COMM-LIST"><span style="color: #FF8C00">0</span> DEMOS</span>
+                    </div>
+                </div>
+                <div class="featured-box">
+                    <div class="featured-box-col2 wow fadeInLeft delay-04s">
+                    <div class="COMM-LIST">0</div>
+                        The longest record with time 0
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</section><!--main-section alabaster-end-->
+
+<!--CC-->
+
+<section class="main-section alabaster"><!--main-section alabaster-start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-8 featured-work">
+                <h2 style="color:#fff"><font style="color: #C3CF6C;">COSY</font>-<font style="color: #1BBFAD;">CLIMBING</font></h2>
+                <P class="padding-b">Cosy-Climbing is the biggest worldwide official kreedz jumping community for unofficial Counter-Strike 1.6 maps, demos and more!</P>
+                <div class="featured-box">
+                    <div class="featured-box-col1 wow fadeInLeft delay-02s">
+                        <i class="fa-database" style="line-height: 45px;"></i>
+                    </div>
+                    <div class="featured-box-col2 wow fadeInLeft delay-02s">
+                        <span class="COMM-LIST"><span style="color: #1BBFAD;">0</span> DEMOS</span>
+                    </div>
+                </div>
+                <div class="featured-box">
+                    <div class="featured-box-col2 wow fadeInLeft delay-04s">
+                    <div class="COMM-LIST">0</div>
+                        The longest record with time 0
+                    </div>
+                </div>
+        </div>
+            <figure class="col-lg-5 col-sm-4 wow fadeInRight">
+                <video width="100%" class="video-border" autoplay muted loop>
+                    <source src="video/cc.mp4">
+                </video>
+            </figure>
+
+        </div>
+    </div>
+</section><!--main-section alabaster-end-->
+
+<section class="main-section team" id="developers"><!--main-section team-start-->
+	<div class="container">
+        <h2>Developers</h2>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-03s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/dev_ava_1.png" alt="">
+                    <ul>
+                        <li><a href="https://steamcommunity.com/id/MihaeLVC/" class="fa-steam"></a></li>
+                        <li><a href="https://github.com/MichaelKheel" class="fa-github"></a></li>
+                    </ul>
+                </div>
+                <h4 class="wow fadeInDown delay-03s" style="color: #FF8C00">MichaelKheel</h4>
+                <span class="wow fadeInDown delay-03s">Main developer</span>
+                <p class="wow fadeInDown delay-03s">Developed a AMXX plugin which is able to work both on Public and Lan on the server. And also this web site.</p>
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/dev_ava_2.png" alt="">
+                    <ul>
+                        <li><a href="http://steamcommunity.com/profiles/76561198134154727" class="fa-steam"></a></li>
+                    </ul>
+                </div>
+                <h4 class="wow fadeInDown delay-06s" style="color: #FF8C00">Destroman</h4>
+                <span class="wow fadeInDown delay-06s">Main developer</span>
+                <p class="wow fadeInDown delay-06s">Developed a method of obtaining data from a demo file, automatic update after the release of the CC and XJ</p>
+            </div>
+        </div>
+    </div>
+</section><!--main-section team-end-->
+
+<section class="main-section price-bg" id="price"><!--main-section team-start-->
+    <div class="container">
+        <h2>Price</h2>
+        <h6 style="margin-bottom: 100px;color:#689A5D;">Buying plugin you help the project to live longer.</h6>
+        <div class="price-table wow fadeInDown delay-03s">
+
+            <div class="small-boxes p-table-position best-value">
+                <ul>
+                    <li class="plan price-head">Lan server plugin</li>
+                    <li class="plan-cost"><del>$5</del></li>
+                    <li style="color: #ff0000;">Unlimited</li>
+                    <li class="plan-duration">Only one player steam</li>
+
+                        <?php
+                        if(!isset($_SESSION['steamid'])) { ?>
+                            <li style='text-transform: none;color: #ff0000;line-height:30px;'>To buy plugin, you must be logged in through Steam.</br><i class='fa fa-3x fa-angle-double-down' id='blink1'></i></li>
+                            <li><a href="/login/?log=in"><i class="fa fa-steam"></i> Sign In</a></li>
+                            <?php
+                        } else {
+                          ?>
+                          <form class="paypal" action="/cgi-bin/paypal/payment.php" method="post" id="paypal_form" target="_blank">
+                              <input type="hidden" name="type" value="wrlb">
+                              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          </form>
+                          <?php } ?>
+                    </ul>
+                </div>
+
+                <div class="small-boxes f-right">
+                    <ul>
+                        <li class="plan price-head">Public server plugin</li>
+                        <li class="plan-cost"><del>$25</del></li>
+                        <li style="color: #ff0000;">Unlimited</li>
+                        <li class="plan-duration">Only one server</li>
+                        <?php
+                        if(!isset($_SESSION['steamid']))
+                        {
+                            ?>
+                            <li style='text-transform: none;color: #ff0000;line-height:30px;'>To buy plugin, you must be logged in through Steam.</br><i class='fa fa-3x fa-angle-double-down' id='blink1'></i></li>
+                            <li><a href="/login/?log=in"><i class="fa fa-steam"></i> Sign In</a></li>
+                            <?php
+                        } else {
+                            ?>
+                          <form class="paypal" action="/cgi-bin/paypal/payment.php" method="post" id="paypal_form" target="_blank">
+                              <input type="hidden" name="type" value="wrpb">
+                              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          </form>
+                            <?php } ?>
+                            </li>
+                        </ul>
+                    </div>
+            <div class="f-clear"></div>
+        </div>
+    </div>
+</div>
+</section><!--main-section team-end-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="#"><img src="" alt=""></a></div>
+        <span class="copyright">Copyright © 2018 KreedZ.ru | All rights reserved.<br>
+KreedZ WR-Bot for GoldSrc Engine Servers | Design by: <a>MichaelKheel</a></span>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false
+
+        });
+
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+
+  </script>
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+
+		$('.main-nav li a').bind('click',function(event){
+			var $anchor = $(this);
+
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+			event.preventDefault();
+		});
+	})
+</script>
+
+</body>
+</html>
